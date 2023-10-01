@@ -1,13 +1,13 @@
-.header {
+.footer {
 	display: flex;
 	height: 90px;
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 3rem;
-	background-color: var(--color-black);
+	margin: 0 auto;
 	max-width: 1268px;
 	width: 100%;
-	margin: 0 auto;
+	border-top: 1px solid #f5f7fa;
 }
 
 .nav {
@@ -17,6 +17,15 @@
 	justify-content: space-between;
 	font-weight: 600;
 	font-size: 1.250rem;
+
+	& > ul {
+		display: flex;
+
+		& > li {
+			margin-right: 2rem;
+			list-style: none;
+		}
+	}
 
 	a {
 		color: #f5f7fa;

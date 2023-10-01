@@ -18,7 +18,7 @@ const info = {
 
 export const About = () => {
 	return (
-		<div className={styles.about}>
+		<div id="about" className={styles.about}>
 			<div className={styles.content}>
 				<div className={styles.content__text}>
 					<h1 className={styles.title}>

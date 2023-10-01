@@ -1,9 +1,10 @@
 import React from 'react';
+import styles from './Footer.module.scss';
 
 export const Footer = () => {
 	return (
-		<footer>
-			<nav>
+		<footer className={styles.footer}>
+			<nav className={styles.nav}>
 				<ul>
 					<li>
 						<a href="#home">Home</a>

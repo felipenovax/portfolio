@@ -1,12 +1,13 @@
 import React from 'react';
 import styles from './Header.module.scss';
+import banner from '../../assets/banner.png';
 
 export const Header = () => {
 	return (
 		<div className={styles.header}>
 			<img
 				className={styles.logo}
-				src="/banner.png"
+				src={banner}
 				alt="felipenovax logo"
 				width="260px"
 				height="40px"
@@ -18,7 +19,7 @@ export const Header = () => {
 				<a href="#experience">Experience</a>
 				<a href="#contact">Contact</a>
 			</nav>
-			<button>button</button>
+			<button>Contact me</button>
 		</div>
 	);
 };
