@@ -1,95 +1,40 @@
+@use '../../../mixins/mixin.scss' as m;
+
 .about {
-    background-color:var(--color-black);
+    background-color: var(--color-black-light);
     color: var(--color-white);
     height: auto;
-    padding: 3rem;
     display: flex;
     align-items: center;
-    max-width: 1268px;
 		width: 100%;
-		margin: 0 auto;
-		margin-top: 2rem;
+		margin-top: 10rem;
+		padding: 2rem 0;
 }
 
-.logo {
-	width: 100%;
-	height: 350px;
-	object-fit: cover;
-	animation: morph 3.5s linear infinite;
+.container {
+	@include m.default-padding;
+	max-width: 1268px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2rem;
+	justify-content: center;
 
-	@keyframes morph {
-		0%,
-		100% {
-				border-radius:
-				40% 60% 70% 30% / 40% 40% 60% 50%;
-		}
-		34% {
-				border-radius:
-				70% 30% 50% 50% / 30% 30% 70% 70%;
-		}
-		67% {
-				border-radius:
-				100% 60% 60% 100% / 100% 100% 60% 60%;
-		}
-}
+	img:first-child {
+		position: relative;
+		top: -4rem;
+	}
 }
 
-.content {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-}
-
-.content__text {
-    width: 50%;
-    padding-right: 3rem;
-
-    strong {
-        color: var(--color-orange);
-    }
-}
-
-.title {
-    font-size: 1.31rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
-
-.subtitle {
-    font-size: 3rem;
-    font-weight: 700;
+.image {
+	border-radius: 16px;
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	margin: 0 auto;
 }
 
 .description {
-    margin: 1rem 0;
-}
-
-.experienceContainer {
-    display: flex;
-
-    div:last-child {
-        margin-left: 3rem;
-    }
-}
-
-.experience {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-		margin-bottom: 2rem;
-
-    & p > strong {
-        font-weight: 700;
-    }
-
-    p:first-child {
-        font-size: 70px;
-        font-weight: 700;
-        margin-right: 2rem;
-    }
-
-    p:last-child {
-        font-size: 1.31rem;
-        font-weight: 600;
-    }
+	padding: 0 3rem;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
 }

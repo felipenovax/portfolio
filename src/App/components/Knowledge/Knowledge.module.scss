@@ -1,9 +1,5 @@
 $animationSpeed: 40s;
 
-@mixin white-gradient {
-	background: linear-gradient(to right,  var(--color-white) 0%,rgba(255,255,255,0) 100%);
-}
-
 @keyframes scroll {
 	0% { transform: translateX(0); }
 	100% { transform: translateX(calc(-250px * 7))}
@@ -45,7 +41,7 @@ $animationSpeed: 40s;
 .container {
 	width: 100%;
 	margin: 0 auto;
-    padding: 3rem 0;
+	padding: 3rem 0;
 }
 
 .cardContainer {

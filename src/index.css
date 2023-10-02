@@ -5,6 +5,7 @@
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
   --color-black: #1b1f24;
+	--color-black-light: #22272f;
   --color-black-hover: ##a3a5a7;
   --color-white: #f5f7fa;
   --color-orange: #f3a903;
@@ -40,7 +41,7 @@ button {
 
 html,
 body {
-  overflow-x: hidden;
+  height: auto;
   background-color: var(--color-black);
   color: var(--color-white);
   font-family: 'Nunito Sans', sans-serif;
